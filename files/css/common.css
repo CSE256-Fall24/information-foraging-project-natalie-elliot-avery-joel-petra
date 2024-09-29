@@ -17,6 +17,10 @@ main div {
     box-sizing: inherit;
 }
 
+ul {
+    padding-left: 25px;
+}
+
 #page-content {
     display: table;
     clear: both;
