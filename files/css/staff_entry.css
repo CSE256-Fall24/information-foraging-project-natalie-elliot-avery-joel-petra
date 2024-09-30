@@ -38,6 +38,22 @@
 }
 
 .individual-staff-member-data {
-    float: left;
+    float: right;
+    margin: 4px, 4px;
+    padding: 4px;
+    width: 888px;
+}
+
+.individual-staff-member-bio {
+    float: right;
     overflow-wrap: normal;
+
+    margin: 4px, 4px;
+    padding: 4px;
+    height: 280px;
+    width: 888px;
+    background-color: antiquewhite;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: justify;
 }
