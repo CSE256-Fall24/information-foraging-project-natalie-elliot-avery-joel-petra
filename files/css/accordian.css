@@ -4,14 +4,31 @@
     background-color: #eee;
     color: #444;
     cursor: pointer;
+    cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
+    position: relative;
+    font-size: 16px;
 }
 
+/* Add down caret symbol */
+.accordion::after {
+    content: "▼";            /* Down caret symbol */
+    font-size: 12px;         /* Adjust size if needed */
+    color: #444;             /* Match the color */
+    position: absolute;
+    right: 20px;             /* Position at the right end */
+    transition: transform 0.4s;  /* Smooth transition for rotation */
+}
+
+/* Rotate the caret when accordion is active */
+.accordion.active::after {
+    transform: rotate(180deg);  /* Rotate caret 180 degrees */
+}
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 
